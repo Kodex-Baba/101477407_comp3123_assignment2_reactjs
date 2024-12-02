@@ -1,3 +1,77 @@
+body{
+  margin: .5em;
+  font-family: Arial, Helvtica, sans-serif;
+  background-color: #0A1828;
+  color: white;
+}
+h1{
+  color: goldenrod;
+  margin: .5em;
+  padding: 8px;
+}
+h2{
+  color: #6ACFC7;
+}
+
+h3{
+  color: #8E0D3C;
+}
+
+
+/* Global content wrapper for centering */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  text-align: center; /* Ensure text is centered */
+  padding: 20px; /* Add some breathing space */
+}
+
+.landing-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.landing-page header h1 {
+  margin: 20px 0;
+  font-size: 2.5em;
+}
+
+.card {
+  margin: auto;
+  padding: 20px;
+  max-width: 500px;
+  background: #6ACFC7;
+  border: 1px solid #6ACFC7;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+  color: #8E0D3C;
+  margin-bottom: 10px;
+  text-shadow: none;
+}
+
+.card p {
+  color: snow;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+/*
 .App {
   text-align: center;
 }
@@ -35,4 +109,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ */
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Modal Container */
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  z-index: 1001; /* Ensuring the modal content stays above the overlay */
+}
+
+/* Button styling */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
